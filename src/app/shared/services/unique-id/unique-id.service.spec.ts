@@ -21,7 +21,12 @@ describe(UniqueIdService.name, () => {
 
         const id = service.generateUniqueIdWithPrefix('app');
 
-      expect(id.startsWith('app-')).toBeTrue();
+      expect(id.startsWith('app-')).toBeTruthy();
+
+      // expect(true).toBeTrue(); -> Expects if the type will be a literal true or false. Cannot be an instance of Boolean class
+      // expect(true).toBe(true); -> Expects if the type will be a literal true or false. Cannot be an instance of Boolean class
+      // expect(true).toBeTruthy(); -> The best :), understand true/false and instances of Boolean class. It's the most generic
+
     });
 
     it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
