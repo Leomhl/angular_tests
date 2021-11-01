@@ -12,4 +12,5 @@ To run the tests use `ng test`.
 ## 📚 More informations
 
 [Angular testing guide](https://angular.io/guide/testing)
+
 [Angular tests course (portuguese)](https://cursos.alura.com.br/course/angular-testes-automatizados-jasmin-karma/)
