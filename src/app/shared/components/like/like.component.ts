@@ -10,8 +10,8 @@ import { UniqueIdService } from '../../services/unique-id.service';
 export class LikeComponent implements OnInit {
 
   @Output() public liked = new EventEmitter<void>();
-  @Input() public likes = 0;
-  @Input() public id = null;
+  @Input() public likes: number = 0;
+  @Input() public id: string = null;
   public icons = {faThumbsUp};
 
   constructor(public uniqueIdService: UniqueIdService) { }
